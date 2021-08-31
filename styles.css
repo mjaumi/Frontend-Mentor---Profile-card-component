@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+
+    font-size: 1.3rem;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+h5{
+
+    color: hsl(229, 23%, 23%);
+}
+
+p{
+
+    color: hsl(0, 0%, 59%);
+}
+
+.main{
+
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: left -60vw top -30vh, right -60vw bottom -30vh;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.cover_image{
+
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.cover_image img{
+
+    width: 100%;
+}
+
+.profile_pic{
+
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50px);
+}
+
+.profile_pic img{
+
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.profile_name{
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-30px);
+}
+
+.profile_name p{
+
+    margin-left: 1em;
+    font-size: 17px;
+}
+
+.address {
+
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(0, 0%, 59%);
+    font-size: 13px;
+    text-align: center;
+    margin-top: 0.5em;
+    transform: translateY(-30px);
+}
+
+.stats{
+
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid hsl(0, 0%, 90%);
+    transform: translateY(-10px);
+    padding: 1em 0;
+}
+
+.stat{
+
+    text-align: center;
+}
+
+.stat p{
+
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 1025px){
+
+    .main{
+       
+        background-size: 60%;
+        background-position: left -30% top -50vh, right -30% bottom -60vh;
+    }
+
+    .card{
+
+        width: 30%;
+    }
+}
